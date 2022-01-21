@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <!-- App main div -->
+  <div class="app">
+
+    <!-- Header -->
+    <header class="header">
+      <h1>Calculadora</h1>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <section class="calculator">
+
+        <!-- Output layout -->
+        <div class="output">
+          <input type="text" id="output" readonly>
+          <input type="text" id="preview" readonly>
+          <div class="moreOpt">
+            <button class="historic">
+              <i class="far fa-clock"></i>
+            </button>
+          </div>
+        </div>
+        <div class="linebreak"></div>
+        <div class="buttons">
+          <button class="operationEsp clear">c</button>
+          <button class="operationEsp backspace">ce</button>
+          <button class="operation percent">%</button>
+          <button class="operation divide">/</button>
+          <button class="common num">7</button>
+          <button class="common num">8</button>
+          <button class="common num">9</button>
+          <button class="operation multi">x</button>
+          <button class="common num">4</button>
+          <button class="common num">5</button>
+          <button class="common num">6</button>
+          <button class="operation minus">-</button>
+          <button class="common num">1</button>
+          <button class="common num">2</button>
+          <button class="common num">3</button>
+          <button class="operation plus">+</button>
+          <button class="change">+/-</button>
+          <button class="common num">0</button>
+          <button class="dot">.</button>
+          <button class="operation equals">=</button>
+        </div>
+        <!-- Historic -->
+        <div class="historic_layout">
+          <ul class="historic_list">
+            <li style="text-align: center" id="res">-------------</li>
+            <li style="text-align: center" id="res">Sem registros</li>
+            <li style="text-align: center" id="res">-------------</li>
+          </ul>
+
+          <div class="historic_footer">
+            <button class="clearHistoric">Limpar histórico</button>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>©2021 - Fred Fonseca</p>
+    </footer>
+    </main>
+  </div>
+
+  <ul class="squares">
+  </ul>
+
+  <script src="js/app.js"></script>
+  <script src="js/animations.js"></script>
+</body>
+
+</html>

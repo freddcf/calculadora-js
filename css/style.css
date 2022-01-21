@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaeef7;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+}
+
+/* ---------- Main div ---------- */
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header {
+  font-size: 25px;
+}
+
+.main {
+  background: #000;
+  border-radius: 7px;
+  padding: 15px;
+  border: solid 1px rgb(77, 77, 77);
+  box-shadow: 4px 5px 2px 3.8px rgb(0, 0, 0);
+}
+
+/* ---------- Output layout ---------- */
+.output {
+  background-color: #000;
+  height: 120px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  cursor: auto;
+}
+
+#output {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  height: 70px;
+  text-align: right;
+  font-size: 25px;
+}
+
+#preview {
+  text-align: right;
+  opacity: 0.5;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  height: 30px;
+  width: 100%;
+}
+
+.moreOpt {
+  display: flex;
+  height: 20px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+i {
+  pointer-events: none;
+}
+
+.historic {
+  outline: none;
+  border: none;
+  background: #000;
+  color: rgb(148, 148, 148);
+  padding: 4px;
+  margin: 0 20px;
+  border-radius: 48%;
+  cursor: pointer;
+}
+.historic:hover {
+  background: rgb(77, 77, 77);
+}
+
+.linebreak {
+  background: rgb(67, 67, 67);
+  height: 1px;
+  margin: 8px 0;
+}
+
+/* ---------- Buttons display ---------- */
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 2px;
+}
+
+.special,
+.common,
+.operation,
+.operationEsp,
+.dot,
+.change {
+  background: #333;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  font-size: 20px;
+  margin: 2px;
+}
+
+.special:hover,
+.common:hover,
+.operation:hover,
+.operationEsp:hover,
+.dot:hover,
+.change:hover {
+  background: rgb(77, 77, 77);
+}
+
+.common,
+.dot,
+.change {
+  color: #fff;
+}
+.operationEsp {
+  background: #333;
+  color: #d9534f;
+}
+.operationEsp:hover {
+  background: #d9534f;
+  color: #fff;
+}
+.operation {
+  color: #5cb85c;
+}
+.equals {
+  background: #333;
+  color: #5cb85c;
+}
+.equals:hover {
+  background: #5cb85c;
+  color: #fff;
+}
+
+/* ---------- Historic display ---------- */
+.historic_layout {
+  display: none;
+  height: 272px;
+  width: 240px;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.historic_list {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin: 10px;
+  text-align: end;
+  padding: 0 20px;
+}
+
+.historic_list li {
+  margin: 5px;
+  font-size: 14px;
+  color: #fff;
+  list-style: none;
+}
+
+#res {
+  color: #5cb85c;
+}
+
+.historic_list::-webkit-scrollbar-track {
+  background: rgb(61, 61, 61);
+}
+.historic_list::-webkit-scrollbar {
+  width: 8px;
+  background: rgb(61, 61, 61);
+}
+.historic_list::-webkit-scrollbar-thumb {
+  background: #646464;
+  border-radius: 50px;
+}
+
+.historic_footer {
+  text-align: center;
+}
+
+.clearHistoric {
+  font-family: sans-serif, Arial, Helvetica;
+  font-weight: bold;
+  background: #5cb85c;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 5px 18px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: 0.5px solid rgb(100, 100, 100);
+  transition: all 0.5s ease;
+}
+
+.clearHistoric:hover {
+  background: rgb(77, 77, 77);
+  color: #5cb85c;
+}
+
+/* ---------- Main footer ---------- */
+.footer {
+  margin: 10px;
+  background: #333;
+  color: #f8f8ff;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+/* ---------- Background animation ---------- */
+
+.squares li {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.363);
+  display: block;
+  position: absolute;
+  bottom: -40px;
+  z-index: -1;
+  animation: appear 2s infinite alternate;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-800px) rotate(970deg);
+  }
+}
