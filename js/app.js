@@ -49,8 +49,9 @@ keyBtn.addEventListener("click", (e) => {
   if (
     e.target.classList[0] === "common" ||
     e.target.classList[0] === "operation" ||
-    e.target.classList[0] === "operationEsp" ||
-    e.target.classList[0] === "dot"
+    e.target.classList[0] === "dot" ||
+    (e.target.classList[0] === "operationEsp" &&
+      e.target.classList[1] !== "backspace")
   ) {
     print(e.target.innerHTML);
   }
