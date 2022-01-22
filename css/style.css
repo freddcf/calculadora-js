@@ -88,9 +88,6 @@ i {
   border-radius: 48%;
   cursor: pointer;
 }
-.historic:hover {
-  background: rgb(77, 77, 77);
-}
 
 .linebreak {
   background: rgb(67, 67, 67);
@@ -122,15 +119,6 @@ i {
   margin: 2px;
 }
 
-.special:hover,
-.common:hover,
-.operation:hover,
-.operationEsp:hover,
-.dot:hover,
-.change:hover {
-  background: rgb(77, 77, 77);
-}
-
 .common,
 .dot,
 .change {
@@ -140,20 +128,13 @@ i {
   background: #333;
   color: #d9534f;
 }
-.operationEsp:hover {
-  background: #d9534f;
-  color: #fff;
-}
+
 .operation {
   color: #5cb85c;
 }
 .equals {
   background: #333;
   color: #5cb85c;
-}
-.equals:hover {
-  background: #5cb85c;
-  color: #fff;
 }
 
 /* ---------- Historic display ---------- */
@@ -215,9 +196,29 @@ i {
   transition: all 0.5s ease;
 }
 
-.clearHistoric:hover {
-  background: rgb(77, 77, 77);
-  color: #5cb85c;
+/* ---------- Hovers ---------- */
+@media (hover) {
+  .historic:hover,
+  .special:hover,
+  .common:hover,
+  .operation:hover,
+  .operationEsp:hover,
+  .dot:hover,
+  .change:hover {
+    background: rgb(77, 77, 77);
+  }
+  .operationEsp:hover {
+    background: #d9534f;
+    color: #fff;
+  }
+  .equals:hover {
+    background: #5cb85c;
+    color: #fff;
+  }
+  .clearHistoric:hover {
+    background: rgb(77, 77, 77);
+    color: #5cb85c;
+  }
 }
 
 /* ---------- Main footer ---------- */
