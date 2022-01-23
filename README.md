@@ -4,7 +4,7 @@ Uma simples calculadora programada na linguagem JavaScript básica. Ela conta co
 
 ## Demo
 
-[![Demo Calculadora JS](https://github.com/freddcf/calculadora-js/blob/main/readme-Images/calculadora-previa.png?raw=true)](https://github.com/freddcf/calculadora-js/blob/main/readme-Images/screen-capture.gif?raw=true)
+![Demo Calculadora JS](https://github.com/freddcf/calculadora-js/blob/main/readme-Images/screen-capture.gif?raw=true)
 
 ### Check online [Demo](https://freddcf.github.io/calculadora-js/) here!
 
