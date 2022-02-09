@@ -1,6 +1,12 @@
-# Calculadora
+# Calculadora - JS
 
-Uma simples calculadora programada na linguagem JavaScript básica. Ela conta com o armazenamento do histórico de cálculos, contudo não utiliza JSON.
+Uma simples calculadora programada na linguagem JavaScript básica. Ela conta com o armazenamento do histórico de cálculos.
+
+## Tecnologias 🛠
+
+* HTML
+* CSS
+* JS
 
 ## Demo
 
