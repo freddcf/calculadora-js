@@ -10,7 +10,7 @@ Uma simples calculadora programada na linguagem JavaScript básica. Ela conta co
 
 ## Demo
 
-![Demo Calculadora JS](https://github.com/freddcf/calculadora-js/blob/main/readme-Images/screen-capture.gif?raw=true)
+![Demo Calculadora JS](./.github/sr-gif.gif)
 
 ### Check online [demo](https://freddcf.github.io/calculadora-js/) here!
 
